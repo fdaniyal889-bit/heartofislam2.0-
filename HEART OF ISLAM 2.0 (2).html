@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Heart of Islam 2.0 – Islamic Reminders, Quran, Hadith &amp; Seerah</title>
+<meta name="description" content="Heart of Islam 2.0 shares Islamic reminders, Quranic lessons, Islamic knowledge and motivational content to help you strengthen your Iman.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04201a;--bg2:#06302a;--card:#0a3a31;--gold:#d4af37;--gold2:#f0d27a;--ink:#f7f5ee;--mute:#b9cfc6;--line:rgba(212,175,55,.28);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,Arial,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+a{color:var(--gold2)}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.2;margin:0 0 .5em}
+.ar{font-family:Amiri,"Traditional Arabic",serif;direction:rtl;line-height:2.1}
+.ur{font-family:"Noto Nastaliq Urdu",Amiri,serif;direction:rtl;line-height:2.2}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:72px 0;position:relative}
+.pat{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' fill='none' stroke='%23d4af37' stroke-opacity='.13'%3E%3Cpath d='M40 4l9 22 22-9-9 22 22 9-22 9 9 22-22-9-9 22-9-22-22 9 9-22-22-9 22-9-9-22 22 9z'/%3E%3Ccircle cx='40' cy='40' r='9'/%3E%3C/svg%3E")}
+.alt{background:var(--bg2)}
+h2{font-size:clamp(2rem,5vw,2.8rem);text-align:center;color:var(--gold2)}
+.sub{text-align:center;color:var(--mute);max-width:620px;margin:0 auto 36px}
+.orn{display:block;margin:0 auto 10px;text-align:center;color:var(--gold);font-size:1.6rem}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;background:rgba(4,32,26,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:700 1.45rem "Cormorant Garamond",serif;color:var(--gold2);text-decoration:none;display:flex;gap:8px;align-items:center}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+nav a{color:var(--ink);text-decoration:none;font-size:.9rem;padding:6px 2px}
+nav a:hover,nav a:focus{color:var(--gold2)}
+#mb{display:none;background:none;border:1px solid var(--line);color:var(--gold2);font-size:1.4rem;border-radius:8px;width:44px;height:44px;cursor:pointer}
+@media(max-width:900px){#mb{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 20px}nav.open{display:block}nav ul{flex-direction:column;gap:2px}nav a{display:block;padding:12px 0}}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--gold);cursor:pointer;font:600 1rem Inter,sans-serif;transition:.2s}
+.gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#04201a}
+.ghost{background:transparent;color:var(--gold2)}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);box-shadow:0 6px 20px rgba(212,175,55,.3)}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:2px}
+#hero{min-height:100vh;display:flex;align-items:center;text-align:center;padding:120px 0 200px;background:radial-gradient(circle at 50% 20%,#0b4a3d,var(--bg) 70%);overflow:hidden}
+#hero h1{font-size:clamp(2.4rem,7vw,4.6rem);color:var(--ink)}
+#hero h1 span{color:var(--gold2)}
+#hero p.t{font-size:clamp(1.05rem,2.4vw,1.3rem);color:var(--mute);max-width:640px;margin:0 auto 30px}
+.bis{font-size:clamp(2rem,6vw,3.2rem);color:var(--gold2);margin-bottom:6px}
+.moon{width:74px;height:74px;margin:0 auto 10px;display:block}
+.mosque{position:absolute;bottom:0;left:0;width:100%;height:150px;fill:#021612;opacity:.9}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{color:var(--gold2);font-size:1.5rem}
+.card p{margin:.4em 0;color:var(--mute)}
+.vid{text-decoration:none;color:var(--ink);display:block;transition:.2s}
+.vid:hover{transform:translateY(-4px);border-color:var(--gold)}
+.th{aspect-ratio:16/9;border-radius:10px;background:linear-gradient(135deg,#0d5a49,#04201a);display:grid;place-items:center;margin-bottom:12px;border:1px solid var(--line)}
+.th.s{aspect-ratio:9/16;max-height:240px;margin-inline:auto}
+.th i{font-style:normal;width:54px;height:54px;border-radius:50%;background:var(--gold);color:#04201a;display:grid;place-items:center;font-size:1.3rem}
+.tag{font-size:.75rem;color:var(--gold2);letter-spacing:.08em;text-transform:uppercase}
+.center{text-align:center;margin-top:34px}
+.big{font-size:1.15rem;padding:16px 36px}
+.dua{text-align:center;max-width:760px;margin:auto;padding:36px 24px}
+.dua .ar{font-size:clamp(1.7rem,5vw,2.4rem);color:var(--gold2)}
+.dua .ur{font-size:1.25rem}
+.dua em{color:var(--mute);display:block;margin:8px 0}
+.ref{font-size:.85rem;color:var(--gold);}
+input,textarea{width:100%;padding:14px;border-radius:10px;border:1px solid var(--line);background:#031a15;color:var(--ink);font:inherit}
+label{display:block;margin:14px 0 6px;font-size:.9rem;color:var(--mute)}
+#q{max-width:560px;display:block;margin:0 auto 20px;border-radius:999px;padding:14px 22px}
+#sr .card{margin-bottom:12px}
+.two{display:grid;gap:36px;grid-template-columns:1fr 1fr}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+#ramadan{display:none;background:linear-gradient(135deg,#0b4a3d,#073028)}
+#msg{margin-top:12px;color:var(--gold2)}
+.soc a{display:block;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none}
+footer{background:#021612;border-top:1px solid var(--line);padding:46px 0 30px;text-align:center;color:var(--mute);font-size:.92rem}
+footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;padding:0;margin:16px 0}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#home"><svg width="26" height="26" viewBox="0 0 100 100" aria-hidden="true"><path fill="#d4af37" d="M62 8a42 42 0 1 0 0 84 34 34 0 1 1 0-84z"/></svg>Heart of Islam 2.0</a>
+<button id="mb" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav id="nav" aria-label="Main"><ul>
+<li><a href="#videos">Videos</a></li><li><a href="#knowledge">Knowledge</a></li><li><a href="#dua">Daily Dua</a></li><li><a href="#reminders">Reminders</a></li><li><a href="#search">Search</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+
+<main>
+<section id="home"><div id="hero" class="pat"><div class="wrap">
+<svg class="moon" viewBox="0 0 100 100" aria-hidden="true"><path fill="#d4af37" d="M62 8a42 42 0 1 0 0 84 34 34 0 1 1 0-84z"/><path fill="#f0d27a" d="M80 22l2.5 6.5 7 .5-5.4 4.4 1.8 6.8-5.9-3.9-5.9 3.9 1.8-6.8-5.4-4.4 7-.5z"/></svg>
+<div class="bis ar" lang="ar">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+<h1>Welcome to <span>Heart of Islam 2.0</span></h1>
+<p class="t">Strengthen Your Iman, Learn Islam, and Bring Your Heart Closer to Allah.</p>
+<div class="btns"><a class="btn gold" href="#videos">Watch Our Videos</a><a class="btn ghost" href="#knowledge">Explore Islamic Knowledge</a></div>
+</div>
+<svg class="mosque" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true"><path d="M0 150V120h90V60l8-22 8 22v60h60v-30q40-70 80 0v30h70V70l8-26 8 26v50h90V95q55-95 110 0v25h80V50l8-30 8 30v70h70v-25q38-65 76 0v25h90V75l8-24 8 24v45h100v-25q50-85 100 0v25h60V60l8-22 8 22v60h30v30z"/></svg>
+</div></section>
+
+<section id="videos" class="alt pat"><div class="wrap">
+<span class="orn">✦</span><h2>Latest Videos &amp; Shorts</h2>
+<p class="sub">Watch on our YouTube channel. Every card opens the original video on YouTube.</p>
+<div class="grid" id="vgrid"></div>
+<div class="center"><a class="btn gold big" href="https://www.youtube.com/@heartofislam2.0?sub_confirmation=1" target="_blank" rel="noopener">▶ Subscribe on YouTube</a></div>
+</div></section>
+
+<section id="knowledge" class="pat"><div class="wrap">
+<span class="orn">✦</span><h2>Islamic Knowledge</h2>
+<p class="sub">Foundations to learn from. Always verify rulings with qualified scholars.</p>
+<div class="grid" id="kgrid"></div>
+</div></section>
+
+<section id="ramadan"><div class="wrap">
+<h2>Ramadan Mubarak</h2>
+<div class="dua"><div class="ar" style="font-size:2rem;color:var(--gold2)" lang="ar">شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ</div>
+<p>“The month of Ramadan [is that] in which was revealed the Quran.”</p><span class="ref">Quran 2:185</span></div>
+</div></section>
+
+<section id="dua" class="alt pat"><div class="wrap">
+<span class="orn">✦</span><h2>Daily Dua</h2>
+<p class="sub">A new dua from the Quran each day.</p>
+<div class="card dua" id="duabox"></div>
+</div></section>
+
+<section id="reminders"><div class="wrap">
+<span class="orn">✦</span><h2>Daily Islamic Reminders</h2>
+<p class="sub">Short reminders from the Quran to nourish the heart.</p>
+<div class="grid" id="rgrid"></div>
+</div></section>
+
+<section id="search" class="alt pat"><div class="wrap">
+<h2>Search Duas &amp; Reminders</h2>
+<label for="q" class="sub" style="margin:0 auto 12px">Try “patience”, “knowledge”, “Hadith”…</label>
+<input id="q" type="search" placeholder="Search…" autocomplete="off">
+<div id="sr" aria-live="polite"></div>
+</div></section>
+
+<section id="about"><div class="wrap two">
+<div><span class="orn" style="text-align:left">✦</span><h2 style="text-align:left">About Us</h2>
+<p>Heart of Islam 2.0 shares Islamic reminders, Quranic lessons, Islamic knowledge and motivational content to encourage people to learn and practise Islam.</p>
+<p>Our goal is simple: to help hearts return to Allah with sincerity, knowledge and hope. We strive to rely on the Quran and authentic sources, and we ask Allah to accept this effort.</p></div>
+<div class="card" style="text-align:center"><div class="ar" style="font-size:2rem;color:var(--gold2)" lang="ar">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</div>
+<p>“Unquestionably, by the remembrance of Allah hearts are assured.”</p><span class="ref">Quran 13:28</span></div>
+</div></section>
+
+<section id="contact" class="alt pat"><div class="wrap two">
+<div><h2 style="text-align:left">Contact Us</h2>
+<form id="cf">
+<label for="n">Name</label><input id="n" required>
+<label for="e">Your email</label><input id="e" type="email" required>
+<label for="m">Message</label><textarea id="m" rows="5" required></textarea>
+<p><button class="btn gold" type="submit">Send Message</button></p><div id="msg" role="status"></div>
+</form></div>
+<div class="soc"><h2 style="text-align:left">Follow Us</h2><div id="soc"></div></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="logo" style="justify-content:center">Heart of Islam 2.0</div>
+<ul><li><a href="#home">Home</a></li><li><a href="#videos">Videos</a></li><li><a href="#knowledge">Knowledge</a></li><li><a href="#dua">Daily Dua</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><a href="https://www.youtube.com/@heartofislam2.0" target="_blank" rel="noopener">YouTube</a></li></ul>
+<p class="ar" lang="ar" style="color:var(--gold2);font-size:1.4rem;margin:0">جَزَاكُمُ ٱللَّهُ خَيْرًا</p>
+<p>May Allah guide us all and accept our deeds. Ameen.</p>
+<p>© <span id="yr"></span> Heart of Islam 2.0. All rights reserved.</p>
+</div></footer>
+
+<script>
+/* ===== EASY UPDATE AREA ===== */
+const CONFIG={
+ channel:"https://www.youtube.com/@heartofislam2.0",
+ email:"", // put your contact email here to activate the contact form
+ forceRamadan:false,
+ social:[{name:"YouTube",url:"https://www.youtube.com/@heartofislam2.0"}] // add {name:"Instagram",url:"..."} etc.
+};
+// Add new videos at the top. type: "video" or "short". url = the full YouTube link.
+const VIDEOS=[
+ // {title:"Video title",type:"video",url:"https://www.youtube.com/watch?v=VIDEO_ID"},
+ // {title:"Short title",type:"short",url:"https://www.youtube.com/shorts/VIDEO_ID"},
+];
+const DUAS=[
+ {ar:"رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",ur:"اے ہمارے رب! ہمیں دنیا میں بھلائی دے اور آخرت میں بھی بھلائی دے اور ہمیں آگ کے عذاب سے بچا۔",en:"Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.",ex:"A comprehensive dua asking for goodness in both lives.",ref:"Quran 2:201"},
+ {ar:"رَبِّ زِدْنِي عِلْمًا",ur:"اے میرے رب! میرے علم میں اضافہ فرما۔",en:"My Lord, increase me in knowledge.",ex:"Ask Allah for beneficial knowledge before studying or learning.",ref:"Quran 20:114"},
+ {ar:"رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً إِنَّكَ أَنتَ الْوَهَّابُ",ur:"اے ہمارے رب! ہمارے دلوں کو ہدایت دینے کے بعد ٹیڑھا نہ کر اور ہمیں اپنے پاس سے رحمت عطا فرما، بے شک تو ہی بہت عطا کرنے والا ہے۔",en:"Our Lord, do not let our hearts deviate after You have guided us, and grant us mercy from Yourself. Indeed, You are the Bestower.",ex:"A dua for steadfastness on guidance.",ref:"Quran 3:8"},
+ {ar:"رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",ur:"اے ہمارے رب! ہم نے اپنی جانوں پر ظلم کیا، اور اگر تو ہمیں معاف نہ کرے اور ہم پر رحم نہ کرے تو ہم ضرور نقصان اٹھانے والوں میں سے ہوں گے۔",en:"Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy upon us, we will surely be among the losers.",ex:"A dua of tawbah (repentance), taught in the Quran.",ref:"Quran 7:23"}
+];
+const REMINDERS=[
+ {t:"Salah",ar:"إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا",en:"Indeed, prayer has been decreed upon the believers at specified times.",ref:"Quran 4:103"},
+ {t:"Sabr (Patience)",ar:"إِنَّ مَعَ الْعُسْرِ يُسْرًا",en:"Indeed, with hardship comes ease.",ref:"Quran 94:6"},
+ {t:"Shukr (Gratitude)",ar:"لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ",en:"If you are grateful, I will surely increase you [in favor].",ref:"Quran 14:7"},
+ {t:"Tawbah (Repentance)",ar:"لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ",en:"Do not despair of the mercy of Allah.",ref:"Quran 39:53"},
+ {t:"Akhirah",ar:"كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ",en:"Every soul will taste death.",ref:"Quran 3:185"},
+ {t:"Trusting Allah",ar:"وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",en:"And whoever relies upon Allah, then He is sufficient for him.",ref:"Quran 65:3"}
+];
+const KNOW=[
+ {t:"Quran",d:"The final revelation from Allah, revealed to Prophet Muhammad ﷺ over about 23 years. It has 114 surahs. Read it, reflect on it and act on it."},
+ {t:"Authentic Hadith",d:"The sayings and actions of the Prophet ﷺ, preserved by scholars. Look for narrations in trusted collections such as Sahih al-Bukhari and Sahih Muslim, and always cite the source."},
+ {t:"Seerah of the Prophet ﷺ",d:"The life of Prophet Muhammad ﷺ: from his birth in Makkah, to the revelation, the Hijrah to Madinah, and his final days. The best example for every Muslim."},
+ {t:"Islamic History",d:"The story of the Muslim ummah: the rightly guided caliphs, the spread of knowledge, and lessons for today."},
+ {t:"Stories of the Prophets",d:"The Quran tells of Adam, Nuh, Ibrahim, Musa, Isa and others (peace be upon them), calling to the worship of Allah alone and teaching patience and faith."},
+ {t:"Islamic Reminders",d:"Short, heart-softening reminders to keep you connected to Allah through the day. See the daily reminders section below."},
+ {t:"Hadith: Intentions",d:"“Actions are only by intentions, and every person will have what they intended.” (Sahih al-Bukhari 1; Sahih Muslim 1907)"}
+];
+/* ===== END UPDATE AREA ===== */
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const day=Math.floor((Date.now()-new Date(new Date().getFullYear(),0,0))/864e5);
+
+// Videos
+const vg=$("#vgrid");
+if(VIDEOS.length){
+ vg.innerHTML=VIDEOS.map(v=>`<a class="card vid" href="${esc(v.url)}" target="_blank" rel="noopener"><div class="th ${v.type==="short"?"s":""}"><i>▶</i></div><span class="tag">${v.type==="short"?"Short":"Video"}</span><h3 style="font-size:1.3rem;color:var(--ink)">${esc(v.title)}</h3></a>`).join("");
+}else{
+ vg.innerHTML=[["Videos","/videos","Browse all long-form videos"],["Shorts","/shorts","Watch our latest Shorts"],["Playlists","/playlists","Follow a full series"]].map(x=>`<a class="card vid" href="${CONFIG.channel}${x[1]}" target="_blank" rel="noopener"><div class="th"><i>▶</i></div><span class="tag">YouTube</span><h3 style="font-size:1.4rem;color:var(--ink)">${x[0]}</h3><p>${x[2]}</p></a>`).join("");
+}
+// Knowledge
+$("#kgrid").innerHTML=KNOW.map(k=>`<article class="card"><h3>${esc(k.t)}</h3><p>${esc(k.d)}</p></article>`).join("");
+// Dua of the day
+const d=DUAS[day%DUAS.length];
+$("#duabox").innerHTML=`<div class="ar" lang="ar">${d.ar}</div><p class="ur" lang="ur">${d.ur}</p><p><strong>${esc(d.en)}</strong></p><em>${esc(d.ex)}</em><span class="ref">${esc(d.ref)}</span>`;
+// Reminders
+$("#rgrid").innerHTML=REMINDERS.map(r=>`<article class="card"><h3>${esc(r.t)}</h3><div class="ar" lang="ar" style="font-size:1.5rem;color:var(--gold2)">${r.ar}</div><p>${esc(r.en)}</p><span class="ref">${esc(r.ref)}</span></article>`).join("");
+// Search
+const IDX=[...DUAS.map(x=>({t:"Dua",b:x.en+" "+x.ex,r:x.ref,ar:x.ar})),...REMINDERS.map(x=>({t:x.t,b:x.en,r:x.ref,ar:x.ar})),...KNOW.map(x=>({t:x.t,b:x.d,r:"",ar:""}))];
+$("#q").addEventListener("input",e=>{
+ const q=e.target.value.trim().toLowerCase();
+ if(!q){$("#sr").innerHTML="";return}
+ const h=IDX.filter(i=>(i.t+" "+i.b+" "+i.r).toLowerCase().includes(q));
+ $("#sr").innerHTML=h.length?h.map(i=>`<div class="card"><h3>${esc(i.t)}</h3>${i.ar?`<div class="ar" lang="ar" style="color:var(--gold2)">${i.ar}</div>`:""}<p>${esc(i.b)}</p><span class="ref">${esc(i.r)}</span></div>`).join(""):`<p class="sub">No results found.</p>`;
+});
+// Ramadan (Hijri month 9)
+try{const hm=parseInt(new Intl.DateTimeFormat("en-u-ca-islamic-umalqura",{month:"numeric"}).format(new Date()),10);
+ if(hm===9||CONFIG.forceRamadan)$("#ramadan").style.display="block";}catch(e){}
+// Social
+$("#soc").innerHTML=CONFIG.social.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)} →</a>`).join("");
+// Contact (opens the visitor's email app, addressed to you)
+$("#cf").addEventListener("submit",e=>{
+ e.preventDefault();
+ const m=$("#msg");
+ if(!CONFIG.email){m.textContent="Contact email is not set up yet. Please message us on YouTube.";return}
+ const body=`${$("#m").value}\n\nFrom: ${$("#n").value} (${$("#e").value})`;
+ location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent("Message from Heart of Islam 2.0 website")}&body=${encodeURIComponent(body)}`;
+ m.textContent="Opening your email app… JazakAllahu khayran!";
+});
+// Mobile nav
+const mb=$("#mb"),nav=$("#nav");
+mb.addEventListener("click",()=>{const o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)});
+nav.addEventListener("click",e=>{if(e.target.tagName==="A"){nav.classList.remove("open");mb.setAttribute("aria-expanded",false)}});
+$("#yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
